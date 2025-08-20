@@ -158,6 +158,25 @@ AUTH_USER_MODEL = 'userauths.User'  # Custom user model
 # DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL")  # The email address you want to use as the sender
 # EMAIL_BACKEND = "anymail.backends.mailgun.EmailBackend"  # Use Anymail
 
+MAILGUN_SECRET_KEY = "MAILGUN_SECRET_KEY"
+MAILGUN_API_KEY = "MAILGUN_API_KEY"
+MAILGUN_SENDER_DOMAIN = "MAILGUN_SENDER_DOMAIN"
+
+STRIPE_SECRET_KEY = "STRIPE_SECRET_KEY"
+PAYPAL_CLIENT_ID = "PAYPAL_CLIENT_ID" # PAYPAL_CLIENT_ID=9-049087124124233
+PAYPAL_SECRET_ID = "PAYPAL_SECRET_ID"  # PAYPAL_SECRET_ID
+
+FRONTEND_SITE_URL = "FRONTEND_SITE_URL"
+BACKEND_SITE_URL = "BACKEND_SITE_URL"
+
+ANYMAIL = {
+    "MAILGUN_API_KEY": "MAILGUN_API_KEY",
+    "MAILGUN_SENDER_DOMAIN": "MAILGUN_SENDER_DOMAIN",
+}
+
+DEFAULT_FROM_EMAIL = "DEFAULT_FROM_EMAIL"  # The email address you want to use as the sender
+EMAIL_BACKEND = "anymail.backends.mailgun.EmailBackend"  # Use Anymail
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
